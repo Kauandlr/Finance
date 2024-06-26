@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:project_mobile/features/splash/splash_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -8,14 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(),
-        drawer: const Drawer(),
-        body: Center(
-          child: Text('Home')),
-        floatingActionButton: FloatingActionButton(onPressed: ()  {},),
-      )
-        
+      home: SplashPage(),
     );
   }
 }
